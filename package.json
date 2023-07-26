@@ -10,6 +10,7 @@
     "pg": "^8.7.1",
     "pg-hstore": "^2.3.4",
     "sequelize": "^6.6.5",
-    "express-validator": "^6.12.2"
+    "express-validator": "^6.12.2",
+    "cors": "^2.8.5"
   }
 }

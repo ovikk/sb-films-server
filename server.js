@@ -1,12 +1,14 @@
 const express = require("express");
-const Sequelize = require('sequelize');
+const Sequelize = require("sequelize");
 const { Film } = require("./db");
+const cors = require("cors");
 const { check, validationResult } = require("express-validator");
 
 const app = express();
 const port = process.env.PORT || 3000;
 
 app.use(express.json());
+app.use(cors());
 
 // Middleware to check headers for email
 app.use([check("email").isEmail()], (req, res, next) => {
